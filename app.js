@@ -7,6 +7,9 @@ app.get("/",(req,res)=>{
 res.sendFile(__dirname+"/index.html")
 
 })
+app.post("/",(req,res)=>{
+    console.log("the post request receive");
+})
 
 //     const query = "London"
 //     const apiKey = "5df5aaa05355ac3dbf39a3bd7ade7fa0";
