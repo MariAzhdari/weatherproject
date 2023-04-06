@@ -12,6 +12,7 @@ res.sendFile(__dirname + "/index.html")
 })
 
 app.post("/",(req,res)=>{
+  console.log(req.body.cityName);
       const query = req.body.cityName;
       const apiKey = "5df5aaa05355ac3dbf39a3bd7ade7fa0";
       const units = "metric"
